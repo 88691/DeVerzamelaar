@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bestel</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="./PagesStylesheet.css">
 </head>
 <body>
@@ -79,65 +79,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button class="button"><a href="Verzameling.html">Verzameling</a></button>
         </div>
     </header>
-<body>
     <hr>
-    <div class="contentB">
-        <div class="SegmentB">
-            <img src="./Wpics/Gitaar1.PNG" alt="Image 1">
-            <p>Prijs: 123,00 Euro</p><br>
-            <p> Type: Elektrisch</p> <br>
-            <p>Uitleg: </p><br>
-            <button class="checkout"></button>
-        </div>
-        <div class="SegmentB">
-            <img src="./Wpics/Gitaar2.PNG" alt="Image 2" width="190px" height="170px">
-            <p>Prijs: 57,00 Euro</p><br>
-            <p> Type: Akoestisch</p> <br>
-            <p>Uitleg: </p><br>
-            <button class="checkout"></button>
-        </div>
-        <div class="SegmentB">
-            <img src="./Wpics/Gitaar3.PNG" alt="Image 3" width="190px" height="170px">
-            <p>Prijs: 87, 00 Euro</p><br>
-            <p> Type: Akoestisch</p> <br>
-            <p>Uitleg: </p><br>
-            <button class="checkout"></button>
-        </div>
-        <div class="SegmentB">
-            <img src="./Wpics/Gitaar4.PNG" alt="Image 4" width="190px" height="170px">
-            <p>Prijs: 105,00 Euro</p><br>
-            <p> Type: Elektrisch</p> <br>
-            <p>Uitleg: </p><br>
-            <button class="checkout"></button>
-        </div>
-        <div class="SegmentB">
-            <img src="./Wpics/Gitaar5.PNG" alt="Image 5" width="190px" height="170px">
-            <p>Prijs: 122,00 Euro </p><br>
-            <p> Type: Elektrisch</p> <br>
-            <p>Uitleg: </p><br>
-            <button class="checkout"></button>
-        </div>
-        <div class="SegmentB">
-            <img src="./Wpics/Gitaar6.PNG" alt="Image 6" width="190px" height="170px">
-            <p>Prijs: 89,00 Euro</p><br>
-            <p> Type: Akoestisch</p> <br>
-            <p>Uitleg: </p><br>
-            <button class="checkout"></button>
-        </div>
-        <div class="SegmentB">
-            <img src="./Wpics/Gitaar7.PNG" alt="Image 7" width="190px" height="170px">
-            <p>Prijs: 52,00 Euro</p><br>
-            <p> Type: Akoestisch</p> <br> 
-            <p>Uitleg: </p><br>
-            <button class="checkout"></button>
-        </div>
-        <div class="SegmentB">
-            <img src="./Wpics/Gitaar8.PNG" alt="Image 8" width="140px" height="210px">
-            <p>Prijs: 325,00 Euro </p><br>
-            <p> Type: Elektrisch</p> <br>
-            <p>Uitleg: </p><br>
-            <button class="checkout"></button>
-        </div>
+<body>
+    <div class="contentC">
+        <h2>Contact Formulier</h2><br>
+        <form method="post">
+            <label for="fname">Voornaam</label>
+            <input type="text" name="firstname" required><br>
+    
+            <label for="lname">Achternaam</label>
+            <input type="text" name="lname" required><br>
+    
+            <label for="adres">Adres</label>
+            <input type="text" name="adres" required><br>
+    
+            <label for="tnummer">Telefoonnummer</label>
+            <input type="tel" id="phone" name="phone" placeholder="01-23456789" pattern="[0-9]{2}-[0-9]{8}"><br>
+    
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required><br>
+    
+            <label for="date">Datum</label>
+            <input type="date" name="date"><br><br>
+    
+            <input type="submit" name="submit" value="submit">
+        </form>
+        
     </div>
       <script src="./PagesStylesheet.css"></script>
 </body>

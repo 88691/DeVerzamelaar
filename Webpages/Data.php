@@ -63,49 +63,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Data</title>
     <link rel="stylesheet" href="./PagesStylesheet.css">
 </head>
 <body>
-    <header class="header">
-        <div class="border">
-            <div class="logo">
-                <img src="./Wpics/logo.png" alt="lotus logo" class="logo-img">
-                <p class="logo-text"><i>De Verzamelaars Vakbond</i></p>
-            </div>
-        </div>
-        <div class="button-placement">
-            <button class="button"><a href="Contact.html">Contact</a></button>
-            <button class="button"><a href="Verzameling.html">Verzameling</a></button>
-        </div>
-    </header>
-    <hr>
-<body>
-    <div class="contentC">
-        <h2>Contact Formulier</h2><br>
-        <form method="post">
-            <label for="fname">Voornaam</label>
-            <input type="text" name="firstname" required><br>
-    
-            <label for="lname">Achternaam</label>
-            <input type="text" name="lname" required><br>
-    
-            <label for="adres">Adres</label>
-            <input type="text" name="adres" required><br>
-    
-            <label for="tnummer">Telefoonnummer</label>
-            <input type="tel" id="phone" name="phone" placeholder="01-23456789" pattern="[0-9]{2}-[0-9]{8}"><br>
-    
-            <label for="email">E-mail</label>
-            <input type="email" name="email" required><br>
-    
-            <label for="date">Datum</label>
-            <input type="date" name="date"><br><br>
-    
-            <input type="submit" name="submit" value="submit">
-        </form>
-        
+    <div class="segmentD">
+        <h2>Database 1</h2>
+        <p>Data from Database 1 goes here.</p>
+        <button class="update-button">Update</button>
+        <button class="delete-button">Delete</button>
     </div>
-      <script src="./PagesStylesheet.css"></script>
+
+    <div class="segmentD">
+        <h2>Database 2</h2>
+        <p>Data from Database 2 goes here.</p>
+        <button class="update-button">Update</button>
+        <button class="delete-button">Delete</button>
+    </div>
+
+    <div class="segmentD">
+        <h2>Database 3</h2>
+        <p>Data from Database 3 goes here.</p>
+        <button class="update-button">Update</button>
+        <button class="delete-button">Delete</button>
+    </div>
+    
 </body>
 </html>

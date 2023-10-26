@@ -37,8 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(2, $lname);
             $stmt->bindParam(3, $adres);
             $stmt->bindParam(4, $tnummer);
-            $stmt->bindParam(5, $email);
-            $stmt->bindParam(6, $date);
+            $stmt->bindParam(4, $email);
+           $stmt->bindParam(5, $date);
 
             // Execute the statement
             if ($stmt->execute()) {
@@ -58,54 +58,58 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./PagesStylesheet.css">
+    <title>Bestel form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="border">
-            <div class="logo">
-                <img src="./Wpics/logo.png" alt="lotus logo" class="logo-img">
-                <p class="logo-text"><i>De Verzamelaars Vakbond</i></p>
-            </div>
-        </div>
-        <div class="button-placement">
-            <button class="button"><a href="Contact.html">Contact</a></button>
-            <button class="button"><a href="Verzameling.html">Verzameling</a></button>
-        </div>
-    </header>
-    <hr>
-<body>
-    <div class="contentC">
-        <h2>Contact Formulier</h2><br>
-        <form method="post">
-            <label for="fname">Voornaam</label>
-            <input type="text" name="firstname" required><br>
-    
-            <label for="lname">Achternaam</label>
-            <input type="text" name="lname" required><br>
-    
-            <label for="adres">Adres</label>
-            <input type="text" name="adres" required><br>
-    
-            <label for="tnummer">Telefoonnummer</label>
-            <input type="tel" id="phone" name="phone" placeholder="01-23456789" pattern="[0-9]{2}-[0-9]{8}"><br>
-    
-            <label for="email">E-mail</label>
-            <input type="email" name="email" required><br>
-    
-            <label for="date">Datum</label>
-            <input type="date" name="date"><br><br>
-    
-            <input type="submit" name="submit" value="submit">
-        </form>
-        
-    </div>
-      <script src="./PagesStylesheet.css"></script>
+    <h1>Bestel</h1>
+
+    <h2></h2>
+    <form method="post">
+        <label for="fname">Voornaam</label>
+        <input type="text" name="fname" required><br>
+
+        <label for="lname">Achternaam</label>
+        <input type="text" name="lnmae" required><br>
+
+        <label for="adres">Adres</label>
+        <input type="text" name="adres" required><br>
+
+        <label for="tnummer">Telefoonnummer</label>
+        <input type="number" name="tnummer" required><br>
+
+        <label for="email">E-mail</label>
+        <input type="number" name="email" required><br>
+
+        <input type="submit" name="submit" value="submit">
+    </form>
+
+
 </body>
 </html>

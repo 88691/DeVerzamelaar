@@ -10,7 +10,7 @@
     <div class="authentication">
         <form id="passwordForm">
             <label for="password">Enter Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" required> <br><br>
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -22,7 +22,7 @@
             event.preventDefault();
             const enteredPassword = document.getElementById("password").value;
             if (enteredPassword === password) {
-                window.location.href = "Data.html"; 
+                window.location.href = "Data.php"; 
             } else {
                 alert("Incorrect password. Please try again.");
             }

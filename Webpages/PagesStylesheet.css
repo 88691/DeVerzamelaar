@@ -217,18 +217,18 @@ input[type=submit]:hover {
 /* Verzameling Page segments and other custom styles */
 .Outercontent {
     background-color: burlywood;
-    width: 80%; /* Adjust the width to your desired value */
-    margin: 0 auto; /* Center the element horizontally */
- 
+    width: 80%; 
+    margin: 0 auto; 
+    border: 1px solid brown;
 }
 
 
 .contentV {
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    grid-gap: 5px; /* Adjust the gap as needed */
-    width: 60%; /* Adjust the width as needed */
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 5px; 
+    width: 60%; 
     margin: 0 auto;
 }
 
@@ -306,6 +306,16 @@ input[type=submit]:hover {
 .SegmentB p {
     color: black;
 }
+
+.checkout {
+    background-color: green; 
+    color: white; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
 
 /*Data pagina*/ 
 .contentD {
