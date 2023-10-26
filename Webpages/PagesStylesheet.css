@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height:auto; /* Make this site really long */
+    width:auto; /* Make this site really wide */
+    overflow: hidden; /* Hide scrollbars */
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.header {
+    background-color: black;
+    padding: 10px;
+}
+
+.logo-img {
+    max-width: 10%;
+    height: auto;
+}
+
+.logo-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.border {
+    border: 1px solid gold;
+    width: 40%; /* Adjust the width to your desired value */
+    height: 100%; /* Set the height to 100% to match the full height of the content area */
+    display: inline-block;
+    padding: 1px;
+}
+
+
+.button {
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: lightgray;
+    color: aliceblue;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+.Adminster{
+    padding: 10px 15px;
+    text-align: center;
+    color: gray;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.Adminster:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.button:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.button-placement {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+hr {
+    background-color: gray;
+    border: none;
+    height: 1px;
+}
+
+.content {
+    background-color: lightgrey;
+    color: black;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ada2d3;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  resize: vertical;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ada2d3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ada2d3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ada2d3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contentC{
+  border-radius: 5px;
+  padding: 17px;
+}
+
+
+.vl {
+    border-left: 6px solid green;
+    height: 88%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.hl {
+    border-top: 6px solid green;
+    width: 40%;
+    position: absolute;
+    left: 25%;
+    top: 60%;
+    transform: translateX(-37%);
+}
+
+.welcome-segment {
+    margin: 20px;
+    padding: 10px;
+}
+
+.text-extra {
+    background-color: gray;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 10;
+    text-align: center;
+}
+
+.text-administer {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    /*left: 0;*/
+    text-align: center;
+}
+
+.None{
+    background-color: transparent;
+    color: transparent;
+}
+
+
+
+
+/* Verzameling Page segments and other custom styles */
+.Outercontent {
+    background-color: burlywood;
+    width: 80%; /* Adjust the width to your desired value */
+    margin: 0 auto; /* Center the element horizontally */
+ 
+}
+
+
+.contentV {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 5px; /* Adjust the gap as needed */
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+.Segment1{
+    background-color: rgba(255, 0, 0, 0.811);
+    color: aliceblue;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Segment2,
+.Segment3,
+.Segment4 {
+    background-color: rgba(128, 128, 128, 0.735);
+    color: aliceblue;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Gitaren {
+    background-color: rgba(255, 0, 0, 0.566);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+/*Bestel pagina*/
+.contentB {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 columns */
+    grid-gap: 10px; /* Adjust the gap as needed */
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+.SegmentB {
+    background-color: rgb(255, 243, 243);
+    color: aliceblue;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+.SegmentB img {
+    float: left;
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.SegmentB p {
+    color: black;
+}
+
+/*Data pagina*/ 
+.contentD {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px; /* Adjust the gap as needed */
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+.SegmentD{
+    background-color: rgba(128, 128, 128, 0.735);
+    color: aliceblue;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Add media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 5px;
+    }
+    .button-placement {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .logo-text {
+        font-size: 14px;
+    }
+}
